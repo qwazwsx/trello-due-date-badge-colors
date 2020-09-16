@@ -1,5 +1,7 @@
 # trello-due-date-badge-colors
 
+#### [DOWNLOAD THE .CRX HERE](https://github.com/qwazwsx/trello-due-date-badge-colors/releases/edit/1)
+
 ### The default Trello 'due soon' badge color is kind of ugly...
 
 ![](https://i.imgur.com/G2Yc9TF.png)
@@ -19,11 +21,13 @@
 
 ## How do I install this?
 
-1. **download the .crx file (if that doesn't work try to download the .zip and extract it)**
-2. **... > more tools > manage extensions OR go to `chrome://extensions/`**
+1. **download the packaged extention from [THE RELEASES TAB](https://github.com/qwazwsx/trello-due-date-badge-colors/releases/edit/1)**
+2. **navigate to `chrome://extensions/`**
+you can also find this by clicking the `...` settings menu > more tools > extensions
 3. **turn developer mode on**
-4. **drag the .crx file into the middle of the window**
-5. **click install**
+there should be a toggle in the upper right-hand corner
+4. **drag and drop the .crx file into the middle of the window**
+5. **click install on the window that pops up**
 
 
 
