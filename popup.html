@@ -1,9 +1,68 @@
 <html>
+  <head>
+    <style>
+    input[type="color"] {
+      height:50px;
+      width:50px;
+    }
+    input[type="number"] {
+      width:30px;
+    }
+    label[for="log"]{
+      font-size: 10px;
+    }
+    h2 {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+    }
+    p {
+      display: inline-block;
+    }
+    #draft {
+      font-size: 15px;
+    }
+    </style>
+  </head>
   <body>
-    <div style="height:100px;width:200px;">
-      <input style="height:100px;width:100px;" type="color" id="picker" value="#000000">
-      <button id="save">save</button>
+    <div style="height:400px;width:300px;">
+      <div class="top">
+        <button id="save">save</button>
+        <button id="reset">reset</button>
+      </div>
+      <br />
+
+      <b id="draft" style="visibility: hidden;">Preview - you have unsaved changes.</b>
+
+      <input type="color" id="past" value="#000000">
+      <h2>past due</h2>
+      <br />
+
+      <input type="color" id="soon" value="#000000" style="margin-top: 15px;">
+      <h2>due in less than 24 hr</h2>
+      <br />
+
+      <input type="color" id="now" value="#000000">
+      <h2>due now</h2>
+      <br />
+
+      <input type="color" id="complete" value="#000000">
+      <h2>completed</h2>
+      <br />
+
+      <div class="footer">
+        <input type="number" id="log" name="log" value="0" min="0" max="2">
+        <label for="log"> developer logs (0: none, 1: text, 2: text + stack trace)</label><br>
+
+        <a href="https://help.trello.com/article/794-adding-due-dates-to-cards">trello docs: due dates</a>
+        <p>&bull;</p>
+        <a href="https://github.com/qwazwsx/trello-due-date-badge-colors">github link</a>
+      </div>
     </div>
+
 
     <script src="popup.js"></script>
   </body>
